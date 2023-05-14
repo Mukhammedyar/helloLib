@@ -1,0 +1,5 @@
+.search-bar {
+  scrollbar-width: 1px !important;
+  scrollbar-color: black !important;
+  overflow-y: hidden;
+}
