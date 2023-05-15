@@ -107,26 +107,6 @@ const books = [
   },
 ];
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     errorElement: <ErrorMessage />,
-//     element: <App books={books} />,
-//   },
-//   {
-//     path: "/contact",
-//     element: <Contact />,
-//   },
-//   {
-//     path: "/books/:id",
-//     element: <BookInfo books={books} />,
-//   },
-//   {
-//     path: "/newbooks/:id",
-//     element: <BookInfo books={books} />,
-//   },
-// ]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
