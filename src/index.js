@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+// import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Contact from "./components/contact/contact";
-import ErrorMessage from "./components/errorElement/err";
-import BookInfo from "./components/bookInfo/bookInfo/bookInfo";
+import { BrowserRouter } from "react-router-dom";
+// import Contact from "./components/contact/contact";
+// import ErrorMessage from "./components/errorElement/err";
+// import BookInfo from "./components/bookInfo/bookInfo/bookInfo";
 
 const books = [
   {
@@ -106,33 +107,38 @@ const books = [
   },
 ];
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    errorElement: <ErrorMessage />,
-    element: <App books={books} />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/books/:id",
-    element: <BookInfo books={books} />,
-  },
-  {
-    path: "/newbooks/:id",
-    element: <BookInfo books={books} />,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     errorElement: <ErrorMessage />,
+//     element: <App books={books} />,
+//   },
+//   {
+//     path: "/contact",
+//     element: <Contact />,
+//   },
+//   {
+//     path: "/books/:id",
+//     element: <BookInfo books={books} />,
+//   },
+//   {
+//     path: "/newbooks/:id",
+//     element: <BookInfo books={books} />,
+//   },
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <BrowserRouter>
+    <App books={books} />
+  </BrowserRouter>
 );
 
+{
+  /* <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode> */
+}
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
