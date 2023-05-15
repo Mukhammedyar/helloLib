@@ -5,9 +5,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-// import Contact from "./components/contact/contact";
-// import ErrorMessage from "./components/errorElement/err";
-// import BookInfo from "./components/bookInfo/bookInfo/bookInfo";
 
 const books = [
   {
