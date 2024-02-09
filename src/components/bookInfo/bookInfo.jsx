@@ -9,7 +9,7 @@ export default function BookInfo({ books }) {
   
 
   return (
-    <div className='w-full h-[100vh] bg-gray-800 text-white px-5 flex items-center'>
+    <div className='w-full max-h-[100vh] h-[100vh] bg-gray-800 text-white px-5 flex items-center'>
 
       {infoBook.map(book => (
         <div className='flex items-center w-[50%]'>

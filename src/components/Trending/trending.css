@@ -1,0 +1,12 @@
+.downloaded:hover > .open {
+  display: block;
+  transition: all 1s ease !important;
+}
+.open {
+  cursor: pointer;
+  display: none;
+  transition: all 1s ease !important;
+}
+.downloaded i {
+  transition: all 1s ease !important;
+}

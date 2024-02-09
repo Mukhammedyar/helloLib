@@ -1,0 +1,7 @@
+.active {
+  background-color: #fff;
+  font-weight: 700;
+  color: firebrick;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
